@@ -1,0 +1,26 @@
+{
+  "setupTasks": [
+    {
+      "name": "Install server dependencies",
+      "command": "cd server && npm install"
+    },
+    {
+      "name": "Install client dependencies",
+      "command": "cd client && npm install"
+    }
+  ],
+  "tasks": {
+    "dev": {
+      "name": "dev",
+      "command": "npm run dev",
+      "runAtStartup": true,
+      "cwd": "client"
+    },
+    "server": {
+      "name": "server",
+      "command": "npm start",
+      "runAtStartup": true,
+      "cwd": "server"
+    }
+  }
+}

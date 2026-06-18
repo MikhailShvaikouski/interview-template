@@ -1,0 +1,14 @@
+{
+  "name": "react-express-app",
+  "version": "1.0.0",
+  "description": "Full-stack React + Express app compatible with CodeSandbox",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install --workspace=client && npm install --workspace=server",
+    "dev": "npm run dev --workspace=client & npm start --workspace=server"
+  }
+}
