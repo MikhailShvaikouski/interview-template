@@ -15,11 +15,11 @@
   "tasks": {
     "dev": {
       "name": "dev",
-      "command": "npm run dev"
+      "command": "npm run dev --workspace=client & (lsof -i:3001 -sTCP:LISTEN -t >/dev/null || npm start --workspace=server)"
     },
     "server": {
       "name": "server",
-      "command": "npm start"
+      "command": "npm start --workspace=server"
     }
   }
 }
